@@ -1,0 +1,193 @@
+
+/* this styles all the h1 headers the same in the entire website all pages*/
+ 
+h1 {
+    filter: drop-shadow(1rem 1rem 1rem black);
+    background-color:rgb(8, 240, 59); 
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: .3rem .3rem .3rem rgba(0, 0, 0, .5);
+    border-style: double;
+    border-width: 1rem;
+    
+}
+
+/* this does the same but to any h2 headers through out the entire site*/
+h2 {
+    filter: drop-shadow(1rem 1rem 1rem black);
+    background-color:rgb(2, 90, 21); 
+    border-radius: 9px;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    text-shadow: -.05rem .05rem 0 white,
+    .05rem .05rem 0 white,
+   .05rem -.05rem 0 white,
+  -.05rem -.05rem 0 white;
+    border-style:solid
+
+}
+
+/* this just changes the background of the entire website to gray*/
+
+html {
+    background-color: gray;
+}
+
+/* this creates class so that i can style any image i want the same as long 
+it makes it to where all my images are centered*/
+.img-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+/* this allows me to to round the edges and place a shadow on any image as long as i us the id img*/
+#img {
+    border-radius: 6px;
+    filter:drop-shadow(4px 4px 4px black)
+}
+
+/* this styles every paragrapgh on the website the same it gives it a gray background and 
+uses text shadow to make it white but with a black border. it also centers all the writing*/
+p {
+    background-color: rgb(100, 99, 99);
+    border-radius: .4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    text-shadow: -.1rem .1rem 0 #000,
+              .1rem .1rem 0 #000,
+             .1rem -.1rem 0 #000,
+            -.1rem -.1rem 0 #000;
+}
+/* this is a text ID so taht i can make any text i want look like this as long as i use this id 
+i used this in some paragrahps but paragraph does the same thing. I wanted to see
+which one it would use and register on the element info */
+#text {
+    color: white;
+    font-size: 1rem;
+    text-shadow: -.1rem .1rem 0 #000,
+                  .1rem .1rem 0 #000,
+                 .1rem -.1rem 0 #000,
+                -.1rem -.1rem 0 #000;
+}
+/* this just allows any hyperlinks to change color when you hover over them with the mouse*/
+a:hover {
+    background-color: rgb(43, 3, 221);
+}
+
+/* this just changes the font details on all hyperlinks in the webpage*/
+a{
+    font-size: 1.5rem;
+    background-color: rgb(1, 192, 74);
+    color: black;
+    border-radius: 4px;
+    border-color: black;
+    border-style: solid;
+}
+
+/* This styles any forms text detail color and underlines it */
+form {
+    font-size: 2rem;
+    color:rgb(0, 0, 7);
+    text-decoration: underline;
+    background-color: rgb(151, 149, 149);
+    border-radius: 1rem;
+   
+}
+/* this is antoher text ID used to create a different style of text used in the website.
+i used this for certain text in the forms*/
+#textborder {
+    border-color: rgb(100, 99, 99);
+    border-radius: .2rem;
+    border-width: .1rem;
+    border-style: solid;
+    display: inline;
+   
+    text-shadow: -.05rem .05rem 0 #000,
+                  .05rem .05rem 0 #000,
+                 .05rem -.05rem 0 #000,
+                -.05rem -.05rem 0 #000;
+
+}
+/* This just adjust the size and font of any submit button inputs */
+input[type=submit] {
+    height: 2rem;
+    width: 7rem;
+    border-width: .2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+/* this adjusts the color when you hover over a submit button*/
+input[type=submit]:hover {
+    color: blue;
+    background-color: aqua;
+
+}
+
+/* this just adjusts the ordered lists font and background color. */
+ol {
+    font-size: 2rem;
+    background-color: rgb(178, 187, 178);    
+    border-radius: 1rem;
+    font-weight:1000;
+    display: block;
+    text-shadow: 1px 1px 2px rgb(1, 235, 1);
+    
+
+}
+/*this adjust the unordered list font and style as well as the bullet style used */
+ul{
+    font-size: 1.5rem;
+    color: black;
+    text-shadow:  1px 1px 2px white;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style-type: georgian;
+    
+
+}
+/* this adjust the table data including color background and border
+i used all three table header and data in the same one so each one looks the same when 
+surrounded by the border*/
+table, th, td {
+    background-color: aliceblue;
+    border-style: double;
+    border-color: black;    
+    border-width: .2rem;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+/* this just makes it to where when you hover over a data entry in the table it gets darker but 
+only for table data not for headings or images*/
+td:hover {
+    background-color: gray;
+}
+/* This is just another class that adjust the text to be a bit bolder and larger */
+.text1 {
+    font-size: large;
+    color: azure;
+    text-shadow: .07rem .07rem .3rem black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+/* this adjust the size of any input boxes for text that are on the webpage*/
+input[type=text] {
+      width: 15rem;
+      height: 1.6rem;
+}
+
+/* this just adjust the footer at the bottom of all pages*/
+footer {
+    font-size: 1.5rem;
+    text-decoration: solid;
+    text-align: center;
+    text-shadow: .2rem .2rem .3rem rgb(1, 71, 13);
+    font-weight: bolder;
+}
